@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Barberia Alura</title>
+    <link rel="stylesheet" href="Estilos-css/reset.css">
+    <link rel="stylesheet" href="Estilos-css/style-contacto.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="Imagenes/servicios/logo.png" alt="Logo de la página"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>       
+        </div>       
+    </header>
+    <main>
+        <form action="">
+            <p class="advertencia">Los campos con * son obligatorios</p>
+
+            <label for="nombre-apellido">Nombre y Apellido*</label>
+            <input type="text" class="input-padron" id="nombre-apellido" required>
+
+            <label for="correo-electronico">Correo Electronico*</label>
+            <input type="email" class="input-padron" id="correo-electronico" placeholder="email@dominio.com" required>
+
+            <label for="telefono">Teléfono*</label>
+            <input type="tel" class="input-padron" id="telefono" required placeholder="(xx) xxxxxx">
+
+            <label for="mensaje">Mensaje*</label>
+            <textarea cols="70" rows="10" class="input-padron" id="mensaje" required></textarea>
+
+            <fieldset> 
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>  
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En cúal horario prefiere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barberia Alura?</label>
+            <input type="button" value="Enviar Formulario" class="enviar">
+        </form>
+
+        <table> <!-- Utilizamos la etiqueta <table> para crear una tabla.-->
+            <thead> <!--La etiqueta thead, representa el encabezado de la tabla.-->
+                <tr> <!--Utilizamos la etiqueta <tr> para marcar la fila de una tabla.-->
+                    <th>Día</th> <!--La etiqueta th, representa la celda del encabezado de la tabla.-->
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <tbody> <!--La etiqueta tbody, representa el cuerpo de la tabla.-->
+                <tr>
+                    <td>Lunes</td> <!--Utilizamos la etiqueta <td> para marcar una columna de una tabla. -->
+                    <td>08:00h - 20:00h</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08:00h - 20:00h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08:00h - 20:00h</td>
+                </tr>
+                <!--La etiqueta tfoot, representa el pie de página de la tabla.-->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="Imagenes/servicios/logo-blanco.png">
+        <p class="copyright">&copy Copyright Barberia Alura - 2022</p>
+    </footer>
+</body>
+</html>
